@@ -1,0 +1,132 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #17324d;
+  background: #f2f7fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem max(1.5rem, calc((100% - 68rem) / 2));
+  background: #fff;
+  color: #52677b;
+  font-size: 0.9rem;
+}
+
+.brand {
+  color: #087e8b;
+  font-size: 1.2rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  min-height: calc(100vh - 4.25rem);
+  place-items: center;
+  padding: 3rem 1.25rem;
+}
+
+.booking-card {
+  width: min(100%, 34rem);
+  padding: clamp(1.5rem, 5vw, 3rem);
+  border: 1px solid #e0eaf0;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 1.25rem 3rem rgb(24 65 88 / 8%);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: #087e8b;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 5vw, 2.4rem);
+  line-height: 1.15;
+}
+
+.intro {
+  margin: 1rem 0 1.75rem;
+  color: #52677b;
+  line-height: 1.6;
+}
+
+form {
+  display: grid;
+  gap: 0.65rem;
+}
+
+label {
+  margin-top: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 2.9rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #cbd9e2;
+  border-radius: 0.55rem;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+input:focus,
+select:focus {
+  border-color: #087e8b;
+  outline: 3px solid rgb(8 126 139 / 15%);
+}
+
+button {
+  min-height: 3rem;
+  margin-top: 0.8rem;
+  border: 0;
+  border-radius: 0.55rem;
+  background: #087e8b;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #066a75;
+}
+
+.note {
+  margin: 1.25rem 0 0;
+  color: #62778a;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
